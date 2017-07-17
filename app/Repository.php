@@ -27,7 +27,7 @@ class Repository extends Model
      */
     public static function isValidName($name)
     {
-        return preg_match('/^[a-z0-9-_\.]+\/[a-z0-9-_\.]+$/', $name) > 0;
+        return preg_match('/^[a-z0-9-_\.]+\/[a-z0-9-_\.]+$/i', $name) > 0;
     }
 
     /**

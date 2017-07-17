@@ -53,5 +53,6 @@ class RepositoryTest extends TestCase
         $this->assertTrue(Repository::isValidName('foo_bar/baz_blim'));
         $this->assertTrue(Repository::isValidName('foo-bar/baz-blim'));
         $this->assertTrue(Repository::isValidName('foo.bar/baz.blim'));
+        $this->assertTrue(Repository::isValidName('CamelCase/Repository'));
     }
 }
